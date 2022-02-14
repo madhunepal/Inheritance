@@ -11,7 +11,7 @@ namespace ConsoleAppUniversity
         static void Main(string[] args)
         {
             // instantiates Employee object 
-            var employee1 = new Employee("Madhu", 2500);
+            var employee1 = new TechEmployee("Madhu");
 
             //instantiates tech employee 
             var employee2 = new TechEmployee("Shanti ");

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppUniversity
 {
-    internal class Employee
+    abstract class Employee
     {
         public string Name { get; set; }
         public double BaseSalary { get; set; }
@@ -37,9 +37,9 @@ namespace ConsoleAppUniversity
         {
             return this.ID + " " + this.Name;
         }
-        public virtual String EmployeeStatus()
-        {
-            return ToString() + " is in the company's system";
-        }
+        public abstract String EmployeeStatus();
+        //{
+        //    return ToString() + " is in the company's system";
+        //}
     }
 }
